@@ -1,5 +1,6 @@
 <img src="introduce.png" width="100%" align=center>
 # AnswerX
+
 * 在软件的根目录里的Question文件夹存放的是卷子文件
 * 卷子格式：json
 * Q_ID：试卷ID号
