@@ -21,3 +21,4 @@ C:\Users\hex3f\Desktop\AnswerX\答题工具\obj\Debug\AnswerX.application
 C:\Users\hex3f\Desktop\AnswerX\答题工具\obj\Debug\AnswerX.csproj.CopyComplete
 C:\Users\hex3f\Desktop\AnswerX\答题工具\obj\Debug\AnswerX.exe
 C:\Users\hex3f\Desktop\AnswerX\答题工具\obj\Debug\AnswerX.pdb
+C:\Users\hex3f\Desktop\AnswerX\答题工具\obj\Debug\AnswerX.csprojAssemblyReference.cache

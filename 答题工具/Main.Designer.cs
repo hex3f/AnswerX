@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.HomePage = new System.Windows.Forms.TabPage();
-            this.About = new System.Windows.Forms.TabPage();
+            this.Start = new System.Windows.Forms.Button();
             this.LearningMode = new System.Windows.Forms.CheckBox();
             this.AllCount = new System.Windows.Forms.Label();
             this.TESTCOUNT = new System.Windows.Forms.TextBox();
@@ -39,16 +39,16 @@
             this.FileList = new System.Windows.Forms.CheckedListBox();
             this.UnOrderChoice = new System.Windows.Forms.CheckBox();
             this.UnOrderTest = new System.Windows.Forms.CheckBox();
-            this.Start = new System.Windows.Forms.Button();
             this.Introduce = new System.Windows.Forms.TabPage();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.AboutText = new System.Windows.Forms.RichTextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.About = new System.Windows.Forms.TabPage();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.AboutText = new System.Windows.Forms.RichTextBox();
             this.tabControl1.SuspendLayout();
             this.HomePage.SuspendLayout();
-            this.About.SuspendLayout();
             this.Introduce.SuspendLayout();
+            this.About.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -82,19 +82,16 @@
             this.HomePage.Text = "主程序";
             this.HomePage.UseVisualStyleBackColor = true;
             // 
-            // About
+            // Start
             // 
-            this.About.Controls.Add(this.label1);
-            this.About.Controls.Add(this.pictureBox1);
-            this.About.Controls.Add(this.AboutText);
-            this.About.Font = new System.Drawing.Font("黑体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.About.Location = new System.Drawing.Point(4, 22);
-            this.About.Name = "About";
-            this.About.Padding = new System.Windows.Forms.Padding(3);
-            this.About.Size = new System.Drawing.Size(497, 263);
-            this.About.TabIndex = 1;
-            this.About.Text = "关于";
-            this.About.UseVisualStyleBackColor = true;
+            this.Start.Font = new System.Drawing.Font("黑体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Start.Location = new System.Drawing.Point(392, 224);
+            this.Start.Name = "Start";
+            this.Start.Size = new System.Drawing.Size(100, 30);
+            this.Start.TabIndex = 21;
+            this.Start.Text = "开始答题";
+            this.Start.UseVisualStyleBackColor = true;
+            this.Start.Click += new System.EventHandler(this.Start_Click);
             // 
             // LearningMode
             // 
@@ -170,17 +167,6 @@
             this.UnOrderTest.Text = "随机题目";
             this.UnOrderTest.UseVisualStyleBackColor = true;
             // 
-            // Start
-            // 
-            this.Start.Font = new System.Drawing.Font("黑体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Start.Location = new System.Drawing.Point(392, 224);
-            this.Start.Name = "Start";
-            this.Start.Size = new System.Drawing.Size(100, 30);
-            this.Start.TabIndex = 21;
-            this.Start.Text = "开始答题";
-            this.Start.UseVisualStyleBackColor = true;
-            this.Start.Click += new System.EventHandler(this.Start_Click);
-            // 
             // Introduce
             // 
             this.Introduce.Controls.Add(this.richTextBox1);
@@ -201,26 +187,19 @@
             this.richTextBox1.TabIndex = 1;
             this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
             // 
-            // AboutText
+            // About
             // 
-            this.AboutText.Font = new System.Drawing.Font("黑体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.AboutText.Location = new System.Drawing.Point(3, 72);
-            this.AboutText.Name = "AboutText";
-            this.AboutText.ReadOnly = true;
-            this.AboutText.Size = new System.Drawing.Size(491, 188);
-            this.AboutText.TabIndex = 2;
-            this.AboutText.Text = "AnswerX\n软件版本：1.0.0\n软件作者：hex3f\n联系方式：hex3f@outlook.com\n开发语言：C#\n框架：.NET Framework 4\n" +
-    "软件开源地址：github.com/hex3f/AnswerX\n本软件遵循CC BY 4.0协议";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::AnswerX.Properties.Resources.answerX;
-            this.pictureBox1.Location = new System.Drawing.Point(6, 6);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(60, 60);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
+            this.About.Controls.Add(this.label1);
+            this.About.Controls.Add(this.pictureBox1);
+            this.About.Controls.Add(this.AboutText);
+            this.About.Font = new System.Drawing.Font("黑体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.About.Location = new System.Drawing.Point(4, 22);
+            this.About.Name = "About";
+            this.About.Padding = new System.Windows.Forms.Padding(3);
+            this.About.Size = new System.Drawing.Size(497, 263);
+            this.About.TabIndex = 1;
+            this.About.Text = "关于";
+            this.About.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -232,6 +211,27 @@
             this.label1.Size = new System.Drawing.Size(79, 20);
             this.label1.TabIndex = 4;
             this.label1.Text = "AnswerX";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::AnswerX.Properties.Resources.answerX;
+            this.pictureBox1.Location = new System.Drawing.Point(6, 6);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(60, 60);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
+            // AboutText
+            // 
+            this.AboutText.Font = new System.Drawing.Font("黑体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.AboutText.Location = new System.Drawing.Point(3, 72);
+            this.AboutText.Name = "AboutText";
+            this.AboutText.ReadOnly = true;
+            this.AboutText.Size = new System.Drawing.Size(491, 188);
+            this.AboutText.TabIndex = 2;
+            this.AboutText.Text = "AnswerX\n软件版本：1.0.0\n软件作者：hex3f\n联系方式：hex3f@outlook.com\n开发语言：C#\n框架：.NET Framework 4\n" +
+    "软件开源地址：github.com/hex3f/AnswerX\n本软件遵循CC BY 4.0协议";
             // 
             // Main
             // 
@@ -248,9 +248,9 @@
             this.tabControl1.ResumeLayout(false);
             this.HomePage.ResumeLayout(false);
             this.HomePage.PerformLayout();
+            this.Introduce.ResumeLayout(false);
             this.About.ResumeLayout(false);
             this.About.PerformLayout();
-            this.Introduce.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
