@@ -1,0 +1,26 @@
+[
+	{
+	"Q_ID":0,
+	"Q_TYPE":"TrueOrFalse",
+	"Q_ISSUE":"这是一道判断题，正确答案正确。",
+	"Q_RIGHT":"正确",
+	"Q_CHOICE":"正确,错误",
+	"Q_SCORE":1
+	},
+	{
+	"Q_ID":1,
+	"Q_TYPE":"Multiple_Choice",
+	"Q_ISSUE":"这是一道多选题，正确答案选项1，选项2，选项3。",
+	"Q_RIGHT":"选项1,选项2,选项3",
+	"Q_CHOICE":"选项1,选项2,选项3,选项4",
+	"Q_SCORE":1
+	},
+	{
+	"Q_ID":2,
+	"Q_TYPE":"Choice",
+	"Q_ISSUE":"这是一道选择题，正确答案选项1。",
+	"Q_RIGHT":"选项1",
+	"Q_CHOICE":"选项1,选项2,选项3,选项4",
+	"Q_SCORE":1
+	}
+]
